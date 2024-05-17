@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Abbas Mirza</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
+        <style type='text/css'>
+        body {
+            font: 20px;
+            font-family: "Optima", sans-serif;
+            border: 5px dashed cadetblue;
+            margin: 2% 2% 2%;
+            padding: 4%;
+            text-align: justify;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                margin: 5% 10% 5%; /* Margin for mobile */
+            }
+	@media only screen and (max-width: 950px) {
+            body {
+                margin: 5% 20% 5%; /* Margin for web */
+            }
+        }
+    </style>
+        
+    </head>
+    
+	<body>
+      <div class="main-message">
+      <h4>Dear DK 🤗,<br></h4>
+      <p>Would you believe it if I say that I've never encountered someone as humble as you before? I'm truly amazed by how devoted you are to your friends. You genuinely care about everyone around you and ensure they feel included. You treat people with positivity. You've reminded me of who I used to be. You've made me recognise that I've lost that part of myself due to various circumstances, and now you're encouraging me to reclaim my older version. It's remarkable how some people don't realise the positive impact they have on others' lives. You've done exactly that for me.<br><br> 
+
+Since the first day we met, our conversations have never felt awkward. It's as if I've known you for years, not just since we met. I only regret not meeting you sooner. We could have explored numerous places together, had a blast, and even gotten you drunk. I must confess, the intoxicated version of you is much funnier than when you're sober.<br><br> 
+
+The more I observe you, the more I sense that you might be sort of hiding something, perhaps a feeling or an emotion. I could be mistaken in this assumption, but I want you to know that whatever is on your mind, you can confide in me without any hesitation. I'm here to support you in whatever way you need (with the exception of being gay).<br><br> 
+
+Even though I discovered you later than I would have liked, I consider myself fortunate that we've become friends. You now have a lifelong brother in me. And I vow to always be there for you like family, regardless of how far we are from each other. I'll be there to support you through all your life's journeys. That's my promise. Love you da mone ❤️<br><br> 
+</p>
+    </div>
+  </body>
