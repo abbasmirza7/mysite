@@ -159,17 +159,20 @@ nav { margin-left: auto; }
 .w .mk { width: 26px; height: 26px; }
 
 /* Career */
-.career { display: grid; grid-template-columns: 1fr 1fr .8fr; gap: 2.5rem; }
+.career { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 2px solid var(--ink); }
+.job { padding: 1.8rem 2rem 1.8rem 0; }
+.job + .job { padding-left: 2rem; border-left: 2px solid var(--ink); }
 .job time { font: 700 .8rem var(--sans); letter-spacing: .1em; color: var(--red); }
-.job h3 { font-size: 2.2rem; text-transform: uppercase; letter-spacing: -.02em; margin: .4rem 0 .3rem; }
-.job__title { font-weight: 600; margin-bottom: 1rem; }
-.job > p:last-child { color: var(--ink-2); font-size: .98rem; }
-.creds { background: var(--ink); color: var(--paper); padding: 1.6rem; }
-.creds h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 1rem; }
-/* badge column sizes to the widest badge, so every row lines up */
-.creds ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: max-content 1fr; column-gap: 1rem; }
-.creds li { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; align-items: baseline; padding: .6rem 0; border-top: 1px solid #3b3b3b; font-size: .92rem; }
-.creds b { color: var(--yellow); font-family: var(--display); }
+.job h3 { font-size: clamp(1.7rem, 3vw, 2.2rem); text-transform: uppercase; letter-spacing: -.02em; margin: .4rem 0 .3rem; }
+.job__title { font-weight: 600; margin-bottom: 0; }
+.job > p:not(.job__title) { color: var(--ink-2); font-size: .98rem; margin: 1rem 0 0; }
+
+/* certificates: one strip across the full width */
+.creds { grid-column: 1 / -1; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 2rem; background: var(--ink); color: var(--paper); padding: 1.4rem 1.6rem; }
+.creds h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: .1em; margin: 0; }
+.creds ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem 0; }
+.creds li { padding: 0 1.2rem; border-left: 1px solid #3b3b3b; font-size: .88rem; line-height: 1.4; }
+.creds b { display: block; margin-bottom: .25rem; color: var(--yellow); font: 700 1.05rem var(--display); }
 .tools { margin: 2.8rem 0 0; padding-top: 1.4rem; border-top: 2px solid var(--ink); color: var(--ink-2); font-size: .95rem; }
 .tools span { font: 700 .76rem var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin-right: 1rem; }
 
@@ -241,8 +244,6 @@ nav { margin-left: auto; }
   .layer { grid-template-columns: 1fr; gap: .4rem; margin-right: 0 !important; }
   .layer__tools { text-align: left; }
   .work { grid-template-columns: 1fr 1fr; }
-  .career { grid-template-columns: 1fr 1fr; }
-  .creds { grid-column: 1 / -1; }
   .contact__grid { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 @media (max-width: 680px) {
@@ -257,6 +258,11 @@ nav { margin-left: auto; }
   .sec-head > div, .sec-head--stack h2 { grid-column: 1 / -1; }
   .sec-no { padding-top: .6rem; }
   .work, .career { grid-template-columns: 1fr; }
+  .job, .job + .job { padding: 1.5rem 0; border-left: 0; }
+  .job + .job { border-top: 2px solid var(--ink); }
+  .creds { grid-template-columns: 1fr; gap: 1rem; }
+  .creds ul { grid-template-columns: 1fr 1fr; }
+  .creds li { padding: 0 .8rem; }
   .svc { box-shadow: 6px 6px 0 var(--ink); }
   .form { padding: 1.4rem; box-shadow: 6px 6px 0 var(--blue); }
 }
